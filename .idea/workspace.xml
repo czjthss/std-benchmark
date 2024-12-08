@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f45cc484-297f-4435-a488-1c8d8bab529e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Analysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentAnomalyDetection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentEvaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentForecast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentReal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentSynthetic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LoadData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/CleanSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/OneRoundSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/OneShotSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/OnlineSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/STDR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/STL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/TSDBSTL_Flush.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/TSDBSTL_Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/WindowRobustSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/WindowSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/CleanSTLUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/LDLT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/LinearMedian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/MovingMedian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/NSigmaDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/OnlineBandedSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/TSDBSTL_Concatenation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestLDLT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestOneRoundSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestOptimalSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Concatenation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Flush.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Experiment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestMethod.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;czjthss&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1548dfc8-a78f-4ec8-8789-b02ebbdd58d8" />
+        <option name="url" value="https://github.com/czjthss/std-benchmark.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2aCvB3r8jXRDoYbSaXfK4UXzdHa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chenzijie/Documents/GitHub/std-benchmark&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16920471&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ExperimentForecast">
+    <configuration name="ExperimentAnomalyDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExperimentAnomalyDetection" />
+      <module name="std-benchmark" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentForecast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExperimentForecast" />
+      <module name="std-benchmark" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentReal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExperimentReal" />
+      <module name="std-benchmark" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentSynthetic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExperimentSynthetic" />
+      <module name="std-benchmark" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TSDBSTL_Flush" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.TSDBSTL_Flush" />
+      <module name="std-benchmark" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ExperimentForecast" />
+        <item itemvalue="Application.ExperimentSynthetic" />
+        <item itemvalue="Application.ExperimentAnomalyDetection" />
+        <item itemvalue="Application.TSDBSTL_Flush" />
+        <item itemvalue="Application.ExperimentReal" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f45cc484-297f-4435-a488-1c8d8bab529e" name="Changes" comment="" />
+      <created>1703835237756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703835237756</updated>
+      <workItem from="1703835238764" duration="544000" />
+      <workItem from="1703836554621" duration="1002000" />
+      <workItem from="1703935621059" duration="615000" />
+      <workItem from="1704262666372" duration="129000" />
+      <workItem from="1706148206778" duration="46412000" />
+      <workItem from="1706599807067" duration="68345000" />
+      <workItem from="1706968025468" duration="33263000" />
+      <workItem from="1709261818478" duration="944000" />
+      <workItem from="1709300023397" duration="4000" />
+      <workItem from="1709537861043" duration="44000" />
+      <workItem from="1709538010205" duration="4014000" />
+      <workItem from="1711276573110" duration="1421000" />
+      <workItem from="1712336585677" duration="21818000" />
+      <workItem from="1712658687904" duration="20782000" />
+      <workItem from="1715907698903" duration="20000" />
+      <workItem from="1716208418189" duration="1956000" />
+      <workItem from="1716281617520" duration="5143000" />
+      <workItem from="1716592439278" duration="3406000" />
+      <workItem from="1716737127205" duration="2400000" />
+      <workItem from="1717238088118" duration="4142000" />
+      <workItem from="1721894614392" duration="1770000" />
+      <workItem from="1722084782317" duration="9567000" />
+      <workItem from="1722324432038" duration="6936000" />
+      <workItem from="1722927573338" duration="248000" />
+      <workItem from="1724234520409" duration="20000" />
+      <workItem from="1727259061945" duration="4895000" />
+      <workItem from="1727480326323" duration="3116000" />
+      <workItem from="1727595057255" duration="2399000" />
+      <workItem from="1729418625658" duration="20233000" />
+      <workItem from="1730800595049" duration="24000" />
+      <workItem from="1731112283157" duration="21000" />
+      <workItem from="1732327687927" duration="423000" />
+      <workItem from="1732332436465" duration="10503000" />
+      <workItem from="1732351699345" duration="42575000" />
+      <workItem from="1733135950257" duration="606000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
