@@ -72,7 +72,7 @@ public class ExperimentEvaluation {
             double[] ts = analysis.get_ts();
             LoadData.addNan(ts, period, missingRate, 1);
 
-            Algorithm.TSDBSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "flush");
+            Algorithm.TSDB_OneRoundSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "flush");
 
             LDLT ldlt = new LDLT(ts.length, epsilon, 1.0, 1.0);
 

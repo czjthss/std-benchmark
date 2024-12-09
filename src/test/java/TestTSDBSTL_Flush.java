@@ -1,4 +1,4 @@
-import algorithm.TSDBSTL_Flush;
+import algorithm.OneRoundSTL_Flush;
 import algorithm.utils.LDLT;
 import org.ejml.data.DMatrixRMaj;
 import org.ejml.dense.row.CommonOps_DDRM;
@@ -59,11 +59,11 @@ public class TestTSDBSTL_Flush {
         // Use streams to convert to a primitive array
         double[] ts = analysis.get_ts();
 
-        TSDBSTL_Flush lsmStl = new TSDBSTL_Flush(period, new LDLT(Qsize, 1e-8, 1.0, 1.0));
+        OneRoundSTL_Flush lsmStl = new OneRoundSTL_Flush(period, new LDLT(Qsize, 1e-8, 1.0, 1.0));
         lsmStl.preCalculate(ts);
 
         // Access the private variable using reflection
-        Field privateField = TSDBSTL_Flush.class.getDeclaredField("v");
+        Field privateField = OneRoundSTL_Flush.class.getDeclaredField("v");
         privateField.setAccessible(true);
 
         // Replace "SomeType" with the actual type of your private variable
@@ -90,7 +90,7 @@ public class TestTSDBSTL_Flush {
 
         // TSDBSTL_Flush
         LDLT ldlt = new LDLT(MAX_PAGE_SIZE, epsilon, lambda, 1.0);
-        TSDBSTL_Flush tsdbstlFlush = new TSDBSTL_Flush(period, ldlt);
+        OneRoundSTL_Flush tsdbstlFlush = new OneRoundSTL_Flush(period, ldlt);
 
         // preCalculate
         tsdbstlFlush.preCalculate(ts);
@@ -112,7 +112,7 @@ public class TestTSDBSTL_Flush {
 
         // TSDBSTL_Flush
         LDLT ldlt = new LDLT(MAX_TS_SIZE, epsilon, lambda, 1.0);
-        TSDBSTL_Flush tsdbstlFlush = new TSDBSTL_Flush(period, ldlt);
+        OneRoundSTL_Flush tsdbstlFlush = new OneRoundSTL_Flush(period, ldlt);
 
         // preCalculate
         tsdbstlFlush.preCalculate(ts);
@@ -125,7 +125,7 @@ public class TestTSDBSTL_Flush {
         }
 
         // get v: Access the private variable using reflection
-        Field privateField = TSDBSTL_Flush.class.getDeclaredField("v");
+        Field privateField = OneRoundSTL_Flush.class.getDeclaredField("v");
         privateField.setAccessible(true);
 
         // Replace "SomeType" with the actual type of your private variable

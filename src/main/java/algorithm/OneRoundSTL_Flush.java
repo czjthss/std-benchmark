@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.apache.commons.math3.analysis.interpolation.LoessInterpolator;
 
-public class TSDBSTL_Flush {
+public class OneRoundSTL_Flush {
     private double[] ts;
     private final int period;
     private final double[] v;
@@ -18,7 +18,7 @@ public class TSDBSTL_Flush {
     private double[] b;
     private double[] z;
 
-    public TSDBSTL_Flush(int period, LDLT ldlt) {
+    public OneRoundSTL_Flush(int period, LDLT ldlt) {
         this.period = period;
         this.v = new double[period];
         this.ldlt = ldlt;

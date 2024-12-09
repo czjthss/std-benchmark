@@ -1,8 +1,4 @@
 import algorithm.OneRoundSTL;
-import algorithm.TSDBSTL_Flush;
-import algorithm.TSDBSTL_Query;
-import algorithm.utils.LDLT;
-import algorithm.utils.TSDBSTL_Concatenation;
 import org.ejml.data.DMatrixRMaj;
 import org.ejml.dense.row.CommonOps_DDRM;
 import org.junit.Test;

@@ -3,17 +3,18 @@ import java.io.FileWriter;
 import java.util.Arrays;
 
 public class ExperimentSynthetic {
-    private static final String OUTPUT_DIR = "/Users/chenzijie/Documents/GitHub/data/output/cleanstl/";
+    private static final String OUTPUT_DIR = "/Users/chenzijie/Documents/GitHub/data/output/decomposition/";
 
     private static final String[] methodList = {
-//            "TSDBSTL_Query",
-//            "TSDBSTL_Flush",
+            "OneRoundSTL_Query",
+//            "OneRoundSTL_Flush",
 //            "OneRoundSTL",
-            "CleanSTL",
-//            "STL",
+//            "CleanSTL",
+            "STL",
 //            "OneShotSTL",
 //            "OnlineSTL",
 //            "RobustSTL",
+            "BacktrackSTL",
 //            "FastRobustSTL",
     };
 
@@ -62,6 +63,8 @@ public class ExperimentSynthetic {
         int slidingWindow = 720;  // 4WindowSTL
         double k = 6; // 4CleanSTL
         int choice = 0; // 4CleanSTL
+        int max_iter = 10; // 4CleanSTL
+
 
         // parameter
         int Qsize = 144000, QsizeBase = 1000000;
@@ -94,87 +97,89 @@ public class ExperimentSynthetic {
 //        for (int idx = 0; idx <= 10; idx += 1) {
 //            missingRate = missingArray[idx];
 //        for (choice = 0; choice < 4; choice++) {
-        for (int max_iter = 1; max_iter <= 10; max_iter += 1) {
-            Analysis analysis;
-            if (datasetName.equals("square")) {
-                analysis = LoadData.squareWave(Qsize, period);
-            } else {
-                analysis = LoadData.triangleWave(Qsize, period);
-            }
+        Analysis analysis;
+        if (datasetName.equals("square")) {
+            analysis = LoadData.squareWave(Qsize, period);
+        } else {
+            analysis = LoadData.triangleWave(Qsize, period);
+        }
 
-            analysis.set_init_num(initPeriodNum * period);
-            boolean init = false;
-            // add nan and error
-            double[] ts = analysis.get_ts();
-            double[] label = analysis.get_label();
-            double[] gt_residual = analysis.get_gt_residual();
+        analysis.set_init_num(initPeriodNum * period);
+        boolean init = false;
+        // add nan and error
+        double[] ts = analysis.get_ts();
+        double[] label = analysis.get_label();
+        double[] gt_residual = analysis.get_gt_residual();
 
 //        LoadData.addNan(ts, period, missingRate, missingLength);
-            LoadData.addError(ts, label, gt_residual, errorRate, errorRange);
+        LoadData.addError(ts, label, gt_residual, errorRate, errorRange);
 //        thres = calThreshold(ts);
 //        thres = 1e-8;
 //        zeta = thres;
 //        epsilon = thres;
 
-            for (String method : methodList) {
-                System.out.println(method);
-                // method
-                switch (method) {
-                    case "OneShotSTL":
-                        init = true;
-                        Algorithm.OneShotSTLModel(period, initPeriodNum, shiftWindow, analysis);
-                        break;
-                    case "WindowSTL":
-                        init = true;
-                        Algorithm.WindowSTLModel(period, initPeriodNum, slidingWindow, analysis);
-                        break;
-                    case "WindowRobustSTL":
-                        init = true;
-                        Algorithm.WindowRobustSTLModel(period, initPeriodNum, slidingWindow, analysis);
-                        break;
-                    case "OnlineSTL":
-                        init = true;
-                        Algorithm.OnlineSTLModel(period, initPeriodNum, analysis);
-                        break;
-                    case "RobustSTL":
-                        init = false;
-                        Algorithm.RobustSTLModel(period, analysis);
-                        break;
-                    case "FastRobustSTL":
-                        init = false;
-                        Algorithm.FastRobustSTLModel(period, analysis);
-                        break;
-                    case "OneRoundSTL":
-                        init = false;
-                        Algorithm.OneRoundSTLModel(period, initPeriodNum, 1e-8, 1e-8, 1.0, analysis);
-                        break;
-                    case "STL":
-                        init = false;
-                        Algorithm.STLModel(period, analysis);
-                        break;
-                    case "CleanSTL":
-                        init = false;
-                        Algorithm.CleanSTLModel(period, analysis, k, max_iter, choice);
-                        break;
-                    case "TSDBSTL_Flush":
-                        Algorithm.TSDBSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "flush");
-                        break;
-                    case "TSDBSTL_Query":
-                        Algorithm.TSDBSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "query");
-                        break;
-                    default:
-                        System.out.println("!!!Wrong!!!");
-                }
-                recordTime(analysis.get_time_cost() + ",");
-                recordTrend(analysis.get_trend_rmse(init) + ",");
-                recordSeasonal(analysis.get_seasonal_rmse(init) + ",");
-                recordResidual(analysis.get_residual_rmse(init) + ",");
-                analysis.recordImputeResults(OUTPUT_DIR + "trend.csv");
+        for (String method : methodList) {
+            System.out.println(method);
+            // method
+            switch (method) {
+                case "OneShotSTL":
+                    init = true;
+                    Algorithm.OneShotSTLModel(period, initPeriodNum, shiftWindow, analysis);
+                    break;
+                case "WindowSTL":
+                    init = true;
+                    Algorithm.WindowSTLModel(period, initPeriodNum, slidingWindow, analysis);
+                    break;
+                case "WindowRobustSTL":
+                    init = true;
+                    Algorithm.WindowRobustSTLModel(period, initPeriodNum, slidingWindow, analysis);
+                    break;
+                case "OnlineSTL":
+                    init = true;
+                    Algorithm.OnlineSTLModel(period, initPeriodNum, analysis);
+                    break;
+                case "RobustSTL":
+                    init = false;
+                    Algorithm.RobustSTLModel(period, analysis);
+                    break;
+                case "FastRobustSTL":
+                    init = false;
+                    Algorithm.FastRobustSTLModel(period, analysis);
+                    break;
+                case "OneRoundSTL":
+                    init = false;
+                    Algorithm.OneRoundSTLModel(period, initPeriodNum, 1e-8, 1e-8, 1.0, analysis);
+                    break;
+                case "STL":
+                    init = false;
+                    Algorithm.STLModel(period, analysis);
+                    break;
+                case "CleanSTL":
+                    init = false;
+                    Algorithm.CleanSTLModel(period, analysis, k, max_iter, choice);
+                    break;
+                case "BacktrackSTL":
+                    init = false;
+                    Algorithm.BacktrackSTLModel(period, analysis);
+                    break;
+                case "OneRoundSTL_Flush":
+                    Algorithm.TSDB_OneRoundSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "flush");
+                    break;
+                case "OneRoundSTL_Query":
+                    Algorithm.TSDB_OneRoundSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "query");
+                    break;
+                default:
+                    System.out.println("!!!Wrong!!!");
             }
-            recordTime("\n");
-            recordTrend("\n");
-            recordSeasonal("\n");
-            recordResidual("\n");
+            recordTime(analysis.get_time_cost() + ",");
+            recordTrend(analysis.get_trend_rmse(init) + ",");
+            recordSeasonal(analysis.get_seasonal_rmse(init) + ",");
+            recordResidual(analysis.get_residual_rmse(init) + ",");
+            analysis.recordImputeResults(OUTPUT_DIR + "trend.csv");
         }
+        recordTime("\n");
+        recordTrend("\n");
+        recordSeasonal("\n");
+        recordResidual("\n");
     }
 }

@@ -2,7 +2,7 @@ package algorithm;
 
 import algorithm.utils.LDLT;
 
-public class TSDBSTL_Query {
+public class OneRoundSTL_Query {
     private final double[][][] TSDB;
     private final int period;
     private final int MAX_PAGE_SIZE;
@@ -13,7 +13,7 @@ public class TSDBSTL_Query {
     private double[] seasonal;
     private double[] residual;
 
-    public TSDBSTL_Query(double[][][] TSDB, int period, double[] v, LDLT ldlt) {
+    public OneRoundSTL_Query(double[][][] TSDB, int period, double[] v, LDLT ldlt) {
         this.TSDB = TSDB;
         this.period = period;
         this.v = v;

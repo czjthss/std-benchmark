@@ -1,4 +1,4 @@
-import algorithm.TSDBSTL_Flush;
+import algorithm.OneRoundSTL_Flush;
 import algorithm.utils.LDLT;
 import algorithm.utils.TSDBSTL_Concatenation;
 import org.ejml.data.DMatrixRMaj;
@@ -79,7 +79,7 @@ public class TestTSDBSTL_Concatenation {
         }
 
         LDLT ldlt = new LDLT(MAX_TS_SIZE, epsilon, lambda, 1.0);
-        TSDBSTL_Flush tsdbstlFlush = new TSDBSTL_Flush(period, ldlt);
+        OneRoundSTL_Flush tsdbstlFlush = new OneRoundSTL_Flush(period, ldlt);
 
         long start = System.nanoTime();
         for (int pageIdx = 0; pageIdx < ts_pages.length; ++pageIdx) {

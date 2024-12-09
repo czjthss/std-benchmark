@@ -1,13 +1,10 @@
-import algorithm.TSDBSTL_Flush;
-import algorithm.TSDBSTL_Query;
+import algorithm.OneRoundSTL_Flush;
+import algorithm.OneRoundSTL_Query;
 import algorithm.utils.LDLT;
 import algorithm.utils.TSDBSTL_Concatenation;
 import org.ejml.data.DMatrixRMaj;
 import org.ejml.dense.row.CommonOps_DDRM;
-import org.ejml.dense.row.decomposition.chol.CholeskyDecompositionLDL_DDRM;
 import org.junit.Test;
-
-import java.lang.reflect.Field;
 
 import static org.junit.Assert.assertEquals;
 
@@ -82,7 +79,7 @@ public class TestTSDBSTL_Query {
         }
 
         LDLT ldlt = new LDLT(MAX_TS_SIZE, epsilon, lambda, 1.0);
-        TSDBSTL_Flush tsdbstlFlush = new TSDBSTL_Flush(period, ldlt);
+        OneRoundSTL_Flush tsdbstlFlush = new OneRoundSTL_Flush(period, ldlt);
 
         long start = System.nanoTime();
         for (int pageIdx = 0; pageIdx < ts_pages.length; ++pageIdx) {
@@ -96,7 +93,7 @@ public class TestTSDBSTL_Query {
         TSDBSTL_Concatenation tsdbstlConcatenation = new TSDBSTL_Concatenation(TSDB, period, tsdbstlFlush.getV(), ldlt);
         tsdbstlConcatenation.concat(zeta);
 
-        TSDBSTL_Query tsdbstlQuery = new TSDBSTL_Query(TSDB, period, tsdbstlFlush.getV(), ldlt);
+        OneRoundSTL_Query tsdbstlQuery = new OneRoundSTL_Query(TSDB, period, tsdbstlFlush.getV(), ldlt);
         tsdbstlQuery.decompose(0, ts.length, 1e-8);
         double[] trend = tsdbstlQuery.getTrend();
         double[] seasonal = tsdbstlQuery.getSeasonal();

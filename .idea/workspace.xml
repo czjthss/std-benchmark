@@ -4,45 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f45cc484-297f-4435-a488-1c8d8bab529e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Analysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentAnomalyDetection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentEvaluation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentForecast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentReal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentSynthetic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoadData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/CleanSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/OneRoundSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/OneShotSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/OnlineSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/STDR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/STL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/TSDBSTL_Flush.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/TSDBSTL_Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/WindowRobustSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/WindowSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/CleanSTLUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/LDLT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/LinearMedian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/MovingMedian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/NSigmaDetector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/OnlineBandedSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/TSDBSTL_Concatenation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestLDLT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestOneRoundSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestOptimalSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Concatenation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Flush.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Experiment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestMethod.java" beforeDir="false" />
+    <list default="true" id="f45cc484-297f-4435-a488-1c8d8bab529e" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentSynthetic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentSynthetic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/BacktrackSTL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/BacktrackSTL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/frstl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/frstl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/l1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/l1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/residual.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/residual.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/seasonal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/seasonal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/trend.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/trend.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTL/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/FastRobustSTLUtils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/RobustSTL/RobustSTL.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/RobustSTL/RobustSTL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/RobustSTL/l1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/RobustSTL/l1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/RobustSTL/sample_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/RobustSTL/sample_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/RobustSTL/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/RobustSTL/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/requirments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/requirments.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/residual.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/residual.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/robuststl.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/robuststl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/seasonal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/seasonal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/tmp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/tmp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTL/trend.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/RobustSTLUtils/trend.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/TSDBSTL_Flush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/OneRoundSTL_Flush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/TSDBSTL_Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/OneRoundSTL_Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestOneRoundSTL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestOneRoundSTL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Concatenation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Concatenation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Flush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Flush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestTSDBSTL_Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Algorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Algorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentSynthetic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentSynthetic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/algorithm/FastRobustSTL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/algorithm/FastRobustSTL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/algorithm/RobustSTL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/algorithm/RobustSTL.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExperimentForecast">
+  <component name="RunManager" selected="Application.ExperimentSynthetic">
     <configuration name="ExperimentAnomalyDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExperimentAnomalyDetection" />
       <module name="std-benchmark" />
@@ -138,8 +135,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TSDBSTL_Flush" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.TSDBSTL_Flush" />
+    <configuration name="OneRoundSTL_Flush" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.OneRoundSTL_Flush" />
       <module name="std-benchmark" />
       <extension name="coverage">
         <pattern>
@@ -153,10 +150,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExperimentForecast" />
         <item itemvalue="Application.ExperimentSynthetic" />
+        <item itemvalue="Application.ExperimentForecast" />
         <item itemvalue="Application.ExperimentAnomalyDetection" />
-        <item itemvalue="Application.TSDBSTL_Flush" />
+        <item itemvalue="Application.OneRoundSTL_Flush" />
         <item itemvalue="Application.ExperimentReal" />
       </list>
     </recent_temporary>
@@ -204,10 +201,32 @@
       <workItem from="1732332436465" duration="10503000" />
       <workItem from="1732351699345" duration="42575000" />
       <workItem from="1733135950257" duration="606000" />
+      <workItem from="1733665372316" duration="3066000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1733665473167</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733665473167</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <option name="closed" value="true" />
+      <created>1733665575701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733665575701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

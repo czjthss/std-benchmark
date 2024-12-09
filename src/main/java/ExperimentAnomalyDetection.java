@@ -151,10 +151,10 @@ public class ExperimentAnomalyDetection {
                             Algorithm.CleanSTLModel(period, analysis, k, 1000, choice);
                             break;
                         case "TSDBSTL_Flush":
-                            Algorithm.TSDBSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "flush");
+                            Algorithm.TSDB_OneRoundSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "flush");
                             break;
                         case "TSDBSTL_Query":
-                            Algorithm.TSDBSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "query");
+                            Algorithm.TSDB_OneRoundSTLModel(period, epsilon, zeta, lambda, analysis, MAX_TS_SIZE, MAX_PAGE_SIZE, MAX_PAGE_NUM, "query");
                             break;
                         default:
                             System.out.println("!!!Wrong!!!");
